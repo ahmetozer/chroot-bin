@@ -1,4 +1,4 @@
-# CHroot-BIN
+# chroot-bin
 
 Easily execute chrooted binnary from current environment without chroot command
 
@@ -10,7 +10,7 @@ To execute your application, normally you can use bellow command
 chroot /apps/bash/ /usr/bin/bash
 ```
 
-With Chroot-bin, instead of long command, you can create link to chroot
+With Chroot-bin, instead of long command, you can create link to chroot-bin
 and execute directly.
 
 ```bash
@@ -21,9 +21,9 @@ bash
 
 ## Config
 
-By default, application looks "/apps/"+$(basename $0) path for chdir.
-You can change default dir by setting `CHROOTBIN_DIR_DEFAULT` variable
-EX. CHROOTBIN_DIR_DEFAULT="/myapps/
+By default, application looks **`"/apps/"+$(basename $0)`** path for chdir.
+You can change default dir by setting `CHROOTBIN_DIR_DEFAULT` variable  
+EX. `CHROOTBIN_DIR_DEFAULT="/myapps/"`
 
 Currently two option is avaible for per binnary.
 One of them is indicates chrootdir of the application and second one is
